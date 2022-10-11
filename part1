@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="container">
       {data.map((content) => (
-        <div className="card">
+        <div key={content.id} className="card">
           <Card text={content.text} />
         </div>
       ))}
